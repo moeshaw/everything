@@ -1,0 +1,25 @@
+#!/bin/bash
+echo -n " Enterpath name to insert hello to that file or directory"
+read file
+
+LINE_TO_ADD="morning"
+
+check_if_line_exists()
+{
+    # grep wont care if one or both files dont exist.
+    grep -qsFx "$LINE_TO_ADD" $file
+
+}
+
+
+add_line_to_profile()
+{
+    profile=$file
+
+sed -i '5s/.*/ $LINE_TO_ADD /' $profile
+
+}
+check_if_line_exists || add_line_to_profile
+
+
+

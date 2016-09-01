@@ -1,0 +1,6 @@
+checking= sed -i '2s/.*/ /**
+ * Project: Merchant Access (MAC)
+ * Team: Rebel Alliance <rebel.alliance@nabancard.com>.
+ *
+ * @copyright 1992-2016 North American Bancard
+ */ /'/home/moeshaw/PhpstormProjects/untitled/*

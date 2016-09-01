@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="HSQLDB (Local) - jdbc:hsqldb:file:/home/moeshaw/PhpstormProjects/creating database/./" uuid="7afb6846-fad6-4111-8f3a-c1d94f74d6f7">
+      <secret-storage>master_key</secret-storage>
+      <introspection-scope>PUBLIC:public</introspection-scope>
+      <resolve-scope>PUBLIC:public</resolve-scope>
+    </data-source>
+    <data-source name="HSQLDB (Local) - moeshaw" uuid="88633c90-6484-4414-ab04-dad7af0292a7">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-scope>PUBLIC:public</introspection-scope>
+      <resolve-scope>PUBLIC:public</resolve-scope>
+    </data-source>
+  </component>
+</project>

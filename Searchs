@@ -1,0 +1,27 @@
+#!/bin/bash
+echo -n "What you like to add the header to all files in this Directory?"
+read name
+checking= sed -i '1s/.*/^[\/\*\*\ \ * Project: Merchant Access (MAC)  \* Team: Rebel Alliance \<rebel\.alliance\@nabancard\.com\>\.  \* \ *  \ @copyright 1992\-2016 North American Bancard  \*\/ ]$/' /home/moeshaw/PhpstormProjects/untitled/*
+
+
+
+
+file= sed -i '1s/.*/ ^[^\/\*\*\ \ * Project: Merchant Access (MAC)  \* Team: Rebel Alliance \<rebel\.alliance\@nabancard\.com\>\.  \* \ *  \ @copyright 1992\-2016 North American Bancard  \*\/ ]$/' /home/moeshaw/PhpstormProjects/untitled/*
+
+
+
+search= sed -i '1s/.*/^[\/\*\*\ \ * Project: Merchant Access (MAC)  \* Team: Rebel Alliance \<rebel\.alliance\@nabancard\.com\>\.  \* \ *  \ @copyright 1992\-2016 North American Bancard  \*\/ ]$/' /home/moeshaw/PhpstormProjects/untitled/*
+
+
+
+if [ $checking = $file  ];
+then
+
+echo "yes"
+
+else 
+  echo "no"
+
+
+fi
+

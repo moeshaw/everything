@@ -1,0 +1,21 @@
+#!/bin/bash
+
+LINE_TO_ADD="hello"
+
+check_if_line_exists()
+{
+    # grep wont care if one or both files dont exist.
+    grep -qsFx "$LINE_TO_ADD" /home/moeshaw/PhpstormProjects/untitled/Test/KernelTestCase.php 
+
+}
+
+add_line_to_profile()
+{
+    profile=/home/moeshaw/PhpstormProjects/untitled/Test/KernelTestCase.php 
+
+    [ -w "$profile" ] || profile=~/home/moeshaw/PhpstormProjects/untitled/Test/KernelTestCase.php 
+
+    printf "%s\n" "$LINE_TO_ADD" >> "$profile"
+}
+
+check_if_line_exists || add_line_to_profile

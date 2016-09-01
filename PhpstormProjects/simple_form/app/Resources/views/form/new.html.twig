@@ -1,0 +1,19 @@
+{% extends "base.html.twig"%}
+
+
+{% block body %}
+ <center>
+    <h1> Fill the Form  out below </h1>
+    <p>
+        The today's date is: {{ 'now'|date('Y-m-d') }}
+    </p>
+
+        {{ include("form/form.html.twig") }}
+
+
+    <h3>
+
+    </h3>
+ </center>
+
+{% endblock %}
